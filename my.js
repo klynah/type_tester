@@ -1,7 +1,10 @@
 $(document).ready(function() {
-$('#slider').on('change', function () {
+  $('#sliderOne').on('change', function () {
     var v = $(this).val();
-    $('div').css('font-size', v + 'rem')
-    $('span').html(v);
+    $('p').css('letter-spacing', v + 'rem')
+
+  $('#sliderTwo').on('change', function () {
+    var v = $(this).val();
+    $('section').css('font-size', v + 'rem')
 });
 });
